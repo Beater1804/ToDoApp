@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="AddNewTask">
+
+    <EditText
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etTask"
+        android:backgroundTint="@color/pastel_light_green"
+        android:hint="Write something...."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSetDueDate"
+        android:text="Set Due Date"
+        android:textColor="@color/pastel_light_green"
+        android:textSize="16sp"
+        android:drawableRight="@drawable/ic_baseline_calendar_month_24"
+        app:layout_constraintTop_toBottomOf="@id/etTask"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="20dp"
+        android:drawablePadding="8dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSaveTask"
+        android:text="Lưu"
+        android:backgroundTint="@color/pastel_dark_green"
+        app:layout_constraintTop_toBottomOf="@id/etTask"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="20dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
