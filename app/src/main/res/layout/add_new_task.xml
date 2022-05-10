@@ -35,6 +35,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnSaveTask"
         android:text="Lưu"
+        android:textColor="@color/white"
         android:backgroundTint="@color/pastel_dark_green"
         app:layout_constraintTop_toBottomOf="@id/etTask"
         app:layout_constraintRight_toRightOf="parent"
